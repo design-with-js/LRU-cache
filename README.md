@@ -12,8 +12,6 @@ An alternative would be to privatize the cache datastore and values only accessi
 
 To start and test:
 
-`
-yarn install
+`yarn install`
 
-yarn test
-`
+`yarn test`
