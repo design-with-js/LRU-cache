@@ -14,5 +14,6 @@ To start and test:
 
 `
 yarn install
+
 yarn test
 `
