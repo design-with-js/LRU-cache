@@ -1,7 +1,7 @@
 import LRU from "../src";
 import axios from "axios";
 
-const lru = new LRU(2);
+const lru = new LRU(10);
 
 describe(`Tests LRU with following operations from json-server:`, () => {
   let users;
@@ -17,6 +17,6 @@ describe(`Tests LRU with following operations from json-server:`, () => {
       lru.set(user.id, user.name);
       // console.log(lru.store);
     });
-    expect(lru.dll.length).toBe(2);
+    expect(lru.dll.length).toBe(10);
   });
 });
